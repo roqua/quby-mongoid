@@ -1,0 +1,3 @@
+test:
+  host: localhost
+  database: quby_mongoid_test
