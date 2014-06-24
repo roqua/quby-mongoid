@@ -1,4 +1,3 @@
-
 require 'quby'
 require 'quby/answer_repos'
 require 'mongoid'
