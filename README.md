@@ -12,13 +12,11 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install quby-mongoid
-
 ## Usage
 
-TODO: Write usage instructions here
+To configure Quby to use this database adapter for storage, perform the following somewhere during your application's initialization process:
+
+    Quby.answer_repo = Quby::AnswerRepos::MongoidRepo.new
 
 ## Contributing
 
