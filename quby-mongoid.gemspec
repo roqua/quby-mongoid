@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Quby::Mongoid::VERSION
   spec.authors       = ["Marten Veldthuis"]
   spec.email         = ["marten@veldthuis.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Mongoid database adapter for the Quby questionnaire engine}
+  spec.description   = ""
   spec.homepage      = ""
   spec.license       = "MIT"
 
