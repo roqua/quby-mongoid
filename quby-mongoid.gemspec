@@ -26,6 +26,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'pry'
 
   # Test dependencies
-  spec.add_development_dependency 'rspec',   '~> 2.14.0'
+  spec.add_development_dependency 'rspec', '~> 2.14.0'
   spec.add_development_dependency "database_cleaner"
+  spec.add_development_dependency 'rubocop', '~> 0.19.0'
 end
