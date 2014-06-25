@@ -1,7 +1,7 @@
 GIT
   remote: git@github.com:roqua/quby_engine.git
-  revision: 35e0e4dc481a022ccde5e5d55fb90aed756b5e8a
-  ref: 35e0e4dc481a022ccde5e5d55fb90aed756b5e8a
+  revision: 1a6ee38bb2499fd9938dbdb4bf8e8033920f6659
+  ref: 1a6ee38bb2499fd9938dbdb4bf8e8033920f6659
   specs:
     quby (1.0.0)
       addressable
@@ -91,7 +91,7 @@ GEM
     diff-lcs (1.2.5)
     equalizer (0.0.9)
     erubis (2.7.0)
-    execjs (2.0.2)
+    execjs (2.2.0)
     fssm (0.2.10)
     haml (4.0.5)
       tilt

@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-gem "quby", :git=>"git@github.com:roqua/quby_engine.git", :ref=>"35e0e4dc481a022ccde5e5d55fb90aed756b5e8a"
+gem "quby", :git=>"git@github.com:roqua/quby_engine.git", :ref=>"1a6ee38bb2499fd9938dbdb4bf8e8033920f6659"
 gem "appraisal", "1.0.0.beta3"
 gem "mongoid", "~> 2.8"
 gem "bson_ext"
