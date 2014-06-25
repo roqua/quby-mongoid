@@ -1,7 +1,7 @@
 GIT
   remote: git@github.com:roqua/quby_engine.git
-  revision: 1a6ee38bb2499fd9938dbdb4bf8e8033920f6659
-  ref: 1a6ee38bb2499fd9938dbdb4bf8e8033920f6659
+  revision: 68240b60ccdfa1f7975c13f0caec7780e9cce742
+  ref: 68240b60ccdfa1f7975c13f0caec7780e9cce742
   specs:
     quby (1.0.0)
       addressable
