@@ -18,6 +18,12 @@ To configure Quby to use this database adapter for storage, perform the followin
 
     Quby.answer_repo = Quby::AnswerRepos::MongoidRepo.new
 
+## Development guide
+
+* Install all dependencies using `bundle exec appraisal install`
+* Run full spec suite (all mongoid versions) using `bundle exec appraisal rake spec`
+
+
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/quby-mongoid/fork )
