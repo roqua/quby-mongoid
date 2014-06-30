@@ -4,7 +4,7 @@ ENV["MONGOID_ENV"] = "test"
 
 require 'quby/mongoid'
 Quby.questionnaires_path = Quby.fixtures_path
-Quby.answer_repo = Quby::AnswerRepos::MongoidRepo.new
+Quby.answer_repo = Quby::Answers::Repos::MongoidRepo.new
 
 require 'mongoid'
 if ::Mongoid::VERSION > '4'
