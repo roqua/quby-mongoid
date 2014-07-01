@@ -16,7 +16,7 @@ And then execute:
 
 To configure Quby to use this database adapter for storage, perform the following somewhere during your application's initialization process:
 
-    Quby.answer_repo = Quby::AnswerRepos::MongoidRepo.new
+    Quby.answer_repo = Quby::Answers::Repos::MongoidRepo.new
 
 ## Development guide
 
