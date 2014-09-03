@@ -13,7 +13,8 @@ module Quby
             store_in collection: :answers
             field :_id, type: String,
                         pre_processed: true,
-                        default: -> { BSON::ObjectId.new.to_s }
+                        default: -> { BSON::ObjectId.new.to_s },
+                        overwrite: true
           elsif ::Mongoid::VERSION > '3'
             store_in collection: :answers
             field :_id, type: String,
