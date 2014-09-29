@@ -34,6 +34,7 @@ module Quby
           field :token,                type: String
           field :active,               type: Boolean, default: true
           field :test,                 type: Boolean, default: false
+          field :started_at,           type: Time
           field :completed_at,         type: Time
           field :outcome_generated_at, type: Time
           field :scores,               type: Hash,    default: {}
