@@ -3,7 +3,7 @@ ENV["RACK_ENV"]    = "test"
 ENV["MONGOID_ENV"] = "test"
 
 require 'quby/mongoid'
-Quby.questionnaires_path = Quby.fixtures_path
+Quby.questionnaire_repo = Quby::Questionnaires::Repos::DiskRepo.new(Quby.fixtures_path)
 Quby.answer_repo = Quby::Answers::Repos::MongoidRepo.new
 
 require 'mongoid'
