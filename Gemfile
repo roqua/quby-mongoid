@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gemspec
 
 # Quby is not pushed to rubygems.org, so we specify its source here explicitly.
-gem 'quby', git: 'git@github.com:roqua/quby_engine.git', ref: 'f5675d2df1b5aa89bc353d617ed6b198203be891'
+gem 'quby', git: 'git@github.com:roqua/quby_engine.git', ref: 'd183772871e244be114abe2399bb7c25bd6fac07'
 # gem 'quby', path: '../quby'
 
 gem 'appraisal', '1.0.0.beta3'

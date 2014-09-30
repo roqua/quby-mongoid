@@ -1,7 +1,7 @@
 GIT
   remote: git@github.com:roqua/quby_engine.git
-  revision: f5675d2df1b5aa89bc353d617ed6b198203be891
-  ref: f5675d2df1b5aa89bc353d617ed6b198203be891
+  revision: d183772871e244be114abe2399bb7c25bd6fac07
+  ref: d183772871e244be114abe2399bb7c25bd6fac07
   specs:
     quby (2.2.0)
       addressable
@@ -75,9 +75,9 @@ GEM
     coderay (1.1.0)
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
-    coffee-rails (3.2.1)
+    coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
-      railties (~> 3.2.0.beta)
+      railties (~> 3.2.0)
     coffee-script (2.3.0)
       coffee-script-source
       execjs
