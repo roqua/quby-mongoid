@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-gem "quby", :git=>"git@github.com:roqua/quby_engine.git", :ref=>"d183772871e244be114abe2399bb7c25bd6fac07"
+gem "quby", :git=>"git@github.com:roqua/quby_engine.git", :ref=>"d294b615815541b52ff59d0c3e1e5c6570b3a6be"
 gem "appraisal", "1.0.0.beta3"
 gem "mongoid", "~> 4.0.0.beta1"
 

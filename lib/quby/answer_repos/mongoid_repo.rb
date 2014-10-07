@@ -41,6 +41,7 @@ module Quby
           field :actions,              type: Hash,    default: {}
           field :completion,           type: Hash,    default: {}
           field :dsl_last_update,      type: Time
+          field :flags,                type: Hash,    default: {}
         end
 
         def find_completed_after(time, answer_ids)
