@@ -8,6 +8,7 @@ dependencies:
     - "bundle check --path=../vendor/bundle --gemfile='gemfiles/mongoid2.gemfile' || bundle install --path=../vendor/bundle --gemfile='gemfiles/mongoid2.gemfile'"
     - "bundle check --path=../vendor/bundle --gemfile='gemfiles/mongoid3.gemfile' || bundle install --path=../vendor/bundle --gemfile='gemfiles/mongoid3.gemfile'"
     - "bundle check --path=../vendor/bundle --gemfile='gemfiles/mongoid4.gemfile' || bundle install --path=../vendor/bundle --gemfile='gemfiles/mongoid4.gemfile'"
+    - "bundle check --path=../vendor/bundle --gemfile='gemfiles/mongoid5.gemfile' || bundle install --path=../vendor/bundle --gemfile='gemfiles/mongoid5.gemfile'"
 test:
   override:
     - bundle exec rspec spec:
@@ -23,6 +24,11 @@ test:
     - bundle exec rspec spec:
         environment:
           BUNDLE_GEMFILE: gemfiles/mongoid4.gemfile
+          RAILS_ENV: test
+          RACK_ENV: test
+    - bundle exec rspec spec:
+        environment:
+          BUNDLE_GEMFILE: gemfiles/mongoid5.gemfile
           RAILS_ENV: test
           RACK_ENV: test
     - bundle exec rubocop
