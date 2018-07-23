@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 ENV["RAILS_ENV"]   = "test"
 ENV["RACK_ENV"]    = "test"
 ENV["MONGOID_ENV"] = "test"
@@ -7,14 +9,14 @@ Quby.questionnaire_repo = Quby::Questionnaires::Repos::DiskRepo.new(Quby.fixture
 Quby.answer_repo = Quby::Answers::Repos::MongoidRepo.new
 
 require 'mongoid'
-if ::Mongoid::VERSION > '5'
-  Mongoid.load!(File.expand_path("../../config/mongoid5.yml", __FILE__), :test)
+if ::Mongoid::VERSION > '6'
+  Mongoid.load!(File.expand_path('../config/mongoid6.yml', __dir__), :test)
+elsif ::Mongoid::VERSION > '5'
+  Mongoid.load!(File.expand_path('../config/mongoid5.yml', __dir__), :test)
 elsif ::Mongoid::VERSION > '4'
-  Mongoid.load!(File.expand_path("../../config/mongoid4.yml", __FILE__), :test)
-elsif ::Mongoid::VERSION > '3'
-  Mongoid.load!(File.expand_path("../../config/mongoid3.yml", __FILE__), :test)
+  Mongoid.load!(File.expand_path('../config/mongoid4.yml', __dir__), :test)
 else
-  Mongoid.load!(File.expand_path("../../config/mongoid2.yml", __FILE__))
+  raise 'Not supported'
 end
 
 require 'database_cleaner'

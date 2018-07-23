@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'quby'
 require 'mongoid'
 
@@ -30,7 +32,7 @@ module Quby
           field :raw_params,           type: Hash
           field :value,                type: Hash
           field :import_notes,         type: Hash
-          field :patient,              type: Hash,    default: {}
+          field :patient,              type: Hash, default: {}
           field :token,                type: String
           field :active,               type: Boolean, default: true
           field :test,                 type: Boolean, default: false
@@ -53,8 +55,8 @@ module Quby
         def update!(answer)
           record = find_record(answer.id)
           # MongoDB won't save new hash order if we don't clear it first.
-          record.update_attributes!(scores: {}, actions: {}, completion: {})
-          update_attributes(record, answer)
+          record.update!(scores: {}, actions: {}, completion: {})
+          update(record, answer)
           store_record(record)
         end
 

@@ -1,7 +1,8 @@
 inherit_from: rubocop-todo.yml
 
 AllCops:
-  Excludes:
+  TargetRubyVersion: 2.4
+  Exclude:
     - 'config/**'
     - 'db/**'
     - 'script/**'
@@ -9,7 +10,9 @@ AllCops:
     - 'vendor/**'
     - 'spec/fixtures/*.rb'
     - 'spec/dummy/**'
-  RunRailsCops: true
+
+Rails:
+  Enabled: true
 
 # Use UTF-8 as the source file encoding.
 Encoding:

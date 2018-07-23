@@ -5,7 +5,7 @@
 source "https://rubygems.org"
 
 gem "appraisal", "2.2.0"
-gem "mongoid", "~> 4.0.0.beta1"
+gem "mongoid", "~> 6.0"
 gem "quby", git: "git@github.com:roqua/quby_engine.git", ref: "6b784c9ac2d725eda7d639111577791ac99d6dbc"
 
 gemspec path: "../"

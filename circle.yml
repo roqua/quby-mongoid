@@ -1,26 +1,15 @@
 machine:
   ruby:
-    version: 2.1.1
+    version: 2.4.3
 dependencies:
   override:
-    - "echo 'ruby-2.1.1' > .ruby-version"
+    - "echo 'ruby-2.4.3' > .ruby-version"
     - "bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --clean"
-    - "bundle check --path=../vendor/bundle --gemfile='gemfiles/mongoid2.gemfile' || bundle install --path=../vendor/bundle --gemfile='gemfiles/mongoid2.gemfile'"
-    - "bundle check --path=../vendor/bundle --gemfile='gemfiles/mongoid3.gemfile' || bundle install --path=../vendor/bundle --gemfile='gemfiles/mongoid3.gemfile'"
     - "bundle check --path=../vendor/bundle --gemfile='gemfiles/mongoid4.gemfile' || bundle install --path=../vendor/bundle --gemfile='gemfiles/mongoid4.gemfile'"
     - "bundle check --path=../vendor/bundle --gemfile='gemfiles/mongoid5.gemfile' || bundle install --path=../vendor/bundle --gemfile='gemfiles/mongoid5.gemfile'"
+    - "bundle check --path=../vendor/bundle --gemfile='gemfiles/mongoid6.gemfile' || bundle install --path=../vendor/bundle --gemfile='gemfiles/mongoid6.gemfile'"
 test:
   override:
-    - bundle exec rspec spec:
-        environment:
-          BUNDLE_GEMFILE: gemfiles/mongoid2.gemfile
-          RAILS_ENV: test
-          RACK_ENV: test
-    - bundle exec rspec spec:
-        environment:
-          BUNDLE_GEMFILE: gemfiles/mongoid3.gemfile
-          RAILS_ENV: test
-          RACK_ENV: test
     - bundle exec rspec spec:
         environment:
           BUNDLE_GEMFILE: gemfiles/mongoid4.gemfile
@@ -29,6 +18,11 @@ test:
     - bundle exec rspec spec:
         environment:
           BUNDLE_GEMFILE: gemfiles/mongoid5.gemfile
+          RAILS_ENV: test
+          RACK_ENV: test
+    - bundle exec rspec spec:
+        environment:
+          BUNDLE_GEMFILE: gemfiles/mongoid6.gemfile
           RAILS_ENV: test
           RACK_ENV: test
     - bundle exec rubocop

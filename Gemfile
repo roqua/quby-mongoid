@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
 # Specify your gem's dependencies in quby-mongoid.gemspec
 gemspec
 
 # Quby is not pushed to rubygems.org, so we specify its source here explicitly.
-gem 'quby', git: 'git@github.com:roqua/quby_engine.git', ref: '3710c65831bff8b0ac893a7f941d9c1192a23c32'
+gem 'quby', git: 'git@github.com:roqua/quby_engine.git', ref: '6b784c9ac2d725eda7d639111577791ac99d6dbc'
 # gem 'quby', path: '../quby'
 
-gem 'appraisal', '1.0.0.beta3'
+gem 'appraisal', '2.2.0'
