@@ -3,7 +3,7 @@ test:
   database: <%= ENV['MONGOID_DATABASE'] || 'quby_mongoid_test' %>
   autocreate_indexes: true
   persist_in_safe_mode: true
-  sessions:
+  clients:
     default:
       database: <%= ENV['MONGOID_DATABASE'] || 'quby_mongoid_test' %>
       hosts:

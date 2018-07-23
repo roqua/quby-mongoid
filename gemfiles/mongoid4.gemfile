@@ -2,8 +2,8 @@
 
 source "https://rubygems.org"
 
-gem "quby", :git=>"git@github.com:roqua/quby_engine.git", :ref=>"d294b615815541b52ff59d0c3e1e5c6570b3a6be"
-gem "appraisal", "1.0.0.beta3"
+gem "quby", git: "git@github.com:roqua/quby_engine.git", ref: "6b784c9ac2d725eda7d639111577791ac99d6dbc"
+gem "appraisal", "2.2.0"
 gem "mongoid", "~> 4.0.0.beta1"
 
-gemspec :path=>".././"
+gemspec path: "../"
