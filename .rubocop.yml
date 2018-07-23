@@ -9,7 +9,9 @@ AllCops:
     - 'vendor/**'
     - 'spec/fixtures/*.rb'
     - 'spec/dummy/**'
-  RunRailsCops: true
+
+Rails:
+  Enabled: true
 
 # Use UTF-8 as the source file encoding.
 Encoding:

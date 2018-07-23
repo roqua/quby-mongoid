@@ -8,11 +8,11 @@ Quby.answer_repo = Quby::Answers::Repos::MongoidRepo.new
 
 require 'mongoid'
 if ::Mongoid::VERSION > '6'
-  Mongoid.load!(File.expand_path("../../config/mongoid6.yml", __FILE__), :test)
+  Mongoid.load!(File.expand_path('../config/mongoid6.yml', __dir__), :test)
 elsif ::Mongoid::VERSION > '5'
-  Mongoid.load!(File.expand_path("../../config/mongoid5.yml", __FILE__), :test)
+  Mongoid.load!(File.expand_path('../config/mongoid5.yml', __dir__), :test)
 elsif ::Mongoid::VERSION > '4'
-  Mongoid.load!(File.expand_path("../../config/mongoid4.yml", __FILE__), :test)
+  Mongoid.load!(File.expand_path('../config/mongoid4.yml', __dir__), :test)
 else
   raise 'Not supported'
 end
